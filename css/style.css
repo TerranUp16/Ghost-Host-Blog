@@ -62,7 +62,7 @@ body {
 
 .navbar a:hover, .navbar a:focus {
   background-color: rgb(17, 17, 17);
-  color: white;
+  color: white !important;
 }
 
 .navbar a:visited {
