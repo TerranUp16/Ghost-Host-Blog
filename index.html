@@ -35,16 +35,28 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script
+      src="javascript/nav.js"
+      defer
+    ></script>
   </head>
 	
   <body>
     <!-- Home Logo + Navigation -->
-    <nav class="navbar">
-      <a href="https://ghosthost.terranup16.com">
-        <img src="images/ghost_host_ghost.svg" alt="Ghost Host Ghost">
-      </a>
-      <a class="text-nav active-nav" href="index.html">Blog</a>
-      <a class="text-nav" href="https://ghosthost.terranup16.com/html/contact.html">Contact</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid ps-0">
+        <a class="navbar-brand" href="https://ghosthost.terranup16.com">
+          <img class="p-0" src="images/ghost_host_ghost.svg" alt="Ghost Host Ghost">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="./index.html">Blog</a>
+            <a class="nav-link" href="https://ghosthost.terranup16.com/html/contact.html">Contact</a>
+        </div>
+      </div>
     </nav>
 
     <!-- Carousel -->
