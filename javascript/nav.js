@@ -21,7 +21,8 @@ function expandTop(event) {
       .css("line-height", "16px")
       .css("height", "auto")
       .css("padding-top", "1vh")
-      .css("padding-bottom", "1vh");
+      .css("padding-bottom", "1vh")
+      .removeClass("active");
   }
 }
 
