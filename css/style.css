@@ -38,6 +38,11 @@ body {
   background-image: url("../images/image4.jpg");
 }
 
+/* Contact Form */
+#feedback {
+  height: 15vh;
+}
+
 /* Navigation bar */
 
 /* Navigation bar styling for non-home page */

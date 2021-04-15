@@ -49,7 +49,7 @@ function validate($element) {
 }
 
 // Handle form submission validation
-function registrationSubmission(event) {
+function contactSubmission(event) {
   let valid = true;
 
   let $firstName = $("#first-name");
@@ -136,9 +136,18 @@ function registrationSubmission(event) {
     invalidate($email);
   }
 
+  let $feedback = $("#feedback");
+
+  if (nonEmptyText($feedback)) {
+    validate($feedback);
+  } else {
+    valid = false;
+    invalidate($feedback);
+  }
+
   if (!valid) {
     event.preventDefault();
-    invalidate($("#registration"));
+    invalidate($("#contact"));
   } else {
     event.preventDefault();
   }
@@ -147,6 +156,6 @@ function registrationSubmission(event) {
 // Setup handlers
 $(function() {
   // Intercept form submission
-  $("#registration").submit(registrationSubmission);
-  $("#submit").click(registrationSubmission);
+  $("#contact").submit(contactSubmission);
+  $("#submit").click(contactSubmission);
 });
